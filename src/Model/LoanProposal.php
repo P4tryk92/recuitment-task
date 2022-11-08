@@ -10,14 +10,17 @@ namespace PragmaGoTech\Interview\Model;
  */
 class LoanProposal
 {
-    private int $term;
+    private int $_term;
+    private float $_amount;
 
-    private float $amount;
-
+    /**
+     * @param int   $term
+     * @param float $amount
+     */
     public function __construct(int $term, float $amount)
     {
-        $this->term = $term;
-        $this->amount = $amount;
+        $this->_term = $term;
+        $this->_amount = $amount;
     }
 
     /**
@@ -26,7 +29,7 @@ class LoanProposal
      */
     public function term(): int
     {
-        return $this->term;
+        return $this->_term;
     }
 
     /**
@@ -34,6 +37,6 @@ class LoanProposal
      */
     public function amount(): float
     {
-        return $this->amount;
+        return $this->_amount;
     }
 }

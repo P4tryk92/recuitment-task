@@ -99,3 +99,21 @@ The fee structure doesn't follow particular algorithm and it is possible that sa
 19000 PLN: 760 PLN
 20000 PLN: 800 PLN
 ```
+
+### SOLUTION
+
+```bash
+1. docker compose up --build
+2. docker exec -it php-task sh
+3. composer install
+```
+
+4. public/index.php:10 -> setup LoanProposal 
+5. http://localhost:8000/
+
+### TESTS:
+
+```bash
+docker exec -it php-task sh
+./vendor/bin/phpunit tests
+```
